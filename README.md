@@ -6,7 +6,7 @@ The aim of this report is to carry out redistricting exercise itself using the M
 Process
 
 The redistricter code has been already tested to be running. From a one-time execution, the plot below is obtained:
- (figure1 here)
+![Plot](Plot.png)
  
 There is need for a full automation of the redistricting simulator using Markov Chain Monte Carlo (MCMC). To be able to simulate the boundaries, there will be need to formulate the problem into nested subgraphs, that is, subdividing the plot above into multiple graphs. The algorithm to be executed is then imposed into sampling plan where the adjacency matrix in the code determines the districts to be included in a single run. The prespecified constraints in the code are the number of runs set to be performed in each iteration. The computation of the true population, however, is not feasible because the empirical performance of the MCMC algorithms involves the elimination of the partisan bias.
 
@@ -43,7 +43,7 @@ For the multiple runs, for each substitution of the district node, the following
 The precincts of each district was set to compare the actual redistricting plan to its frequencies or the distribution. The aim is to detect gerrymandering in each specific run. From the runs attained above, it was hard to develop a consistent approach to evaluate them, thus making the development of such an algorithm to be difficult. 
 
 ## Histogram
- (figure2 here)
+![Plot2](Plot2.png)
 
 For the histogram, the partitions developed at individual random runs, it can be depicted that it is extremely difficult to yield same number of partitions in each individual run. Besides, the problem of the enumeration of each individual run can be non-tractable event, hence cannot be applied in the realistic redistricting runs. From there multiple runs, the MCMC algorithm should, therefore, be implemented to obtain representative and dependent sample from the uniform valid redistricting plans implemented. 
 
